@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria Vitória</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+    <!-- Cabeçalho  -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="https://cdn-icons-png.flaticon.com/512/8832/8832880.png" alt="Logo" width="30" height="30" class="me-2">
+            Livraria Conquista
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#produtos">Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- Secao de Destaque -->
+    <header class="jumbotron bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Bem-vindo à Livraria Vitória</h1>
+            <p class="lead">A sua fonte de cultura e conhecimento em Vitória da Conquista. Explore nosso catálogo de livros e entre em contato para saber mais.</p>
+            <a href="#produtos" class="btn btn-light">Ver Produtos</a>
+        </div>
+    </header>
+
+    <!-- produtos-->
+    <section id="produtos" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Nossos Produtos</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://ocapista.com.br/imgs/capas/capa_livro_fantasia.jpg" class="card-img-top img-fluid img-fixed-size" alt="Livro 1">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Mestres do Tempo por R.V. Campbell</h5>
+                            <p class="card-text flex-grow-1">Em uma versão alternativa da antiga Inglaterra durante a Revolução Industrial. "Mestres do Tempo" transporta os leitores para uma era onde engenheiros e feiticeiros disputam o controle de Londres, uma cidade que pulsa com o clangor das engrenagens e o sussurro de encantamentos arcanos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://marketplace.canva.com/EAFAD6AiAZY/1/0/1003w/canva-capa-de-livro-de-auto-ajuda-e-espiritualidade-impactante-vermelha-e-branca-7wPoFsEQZaQ.jpg" class="card-img-top img-fluid img-fixed-size" alt="Livro 2">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Faça Agora por Renato Miranda</h5>
+                            <p class="card-text flex-grow-1">Em "Faça Agora", o renomado especialista em desenvolvimento pessoal, Renato Miranda, revela como superar a procrastinação e transformar intenções em ações concretas. Combinando insights psicológicos práticos e histórias inspiradoras de pessoas que deram uma guinada em suas vidas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://i.pinimg.com/736x/9f/a0/31/9fa031817b2586767dbb5207ef7e835d.jpg" class="card-img-top img-fluid img-fixed-size" alt="Livro 3">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">AC/DC por Black Ice</h5>
+                            <p class="card-text flex-grow-1">Em "AC/DC" da editora Black Ice, mergulhamos na eletrizante trajetória de uma das bandas de rock mais icônicas do mundo. Desde os primeiros acordes em bares australianos até os estádios lotados e hinos que marcaram gerações, este livro oferece um olhar íntimo sobre os desafios, tragédias e triunfos que moldaram a lenda do AC/DC.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <!-- Secao de Contato -->
+    <section id="contato" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Entre em Contato</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensagem" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="mensagem" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodape -->
+    <footer class="py-4 bg-dark text-white text-center">
+        <div class="container">
+            <p>Livraria Vitória - Vitória da Conquista, BA</p>
+            <p>Siga-nos nas redes sociais</p>
+            <div>
+                <a href="#" class="text-white me-3">Facebook</a>
+                <a href="#" class="text-white me-3">Instagram</a>
+                <a href="#" class="text-white">Twitter</a>
+            </div>
+            <p class="mt-3">Desenvolvido por Pedro Almeida Carvalho</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
